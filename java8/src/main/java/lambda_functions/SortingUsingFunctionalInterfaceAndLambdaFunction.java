@@ -1,5 +1,11 @@
 package lambda_functions;
 
+/*
+ * @author Karansing Rajput
+ * @version 1.0
+ * @since 08/10/23, 7:35 pm
+ */
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;

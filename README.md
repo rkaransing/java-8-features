@@ -8,5 +8,32 @@
 
 
  - Why we need default methods -> Without affecting implementation classes if we want to add new methods to the interface in that case we need default methods (To extend interface functionality).
- - Why we need static modifier -> To define general utility methods inside interface.  
- - 
+ - Why we need static modifier -> To define general utility methods inside interface. (These methods by default not available to the implementation classes)
+ - Predefined functional interfaces
+   - Predicate 
+     - ```
+          interface Predicate<T> {
+             public boolean test(T t);    
+          }
+       ```
+     - 
+   - Function
+     - ```
+        interface Function<T, R>{
+            public R apply(T t);
+        }
+       ```
+
+   - Consumer
+   - Supplier
+ - Two argument predefined functional interfaces
+   - BiPredicate
+   - BiFunction
+   - BiConsumer
+ - Primitive functional interfaces
+   - IntPredicate
+   - IntFunction
+   - IntConsumer
+ - `java.util.function` contains many predefined functional interfaces.
+
+
