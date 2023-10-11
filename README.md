@@ -11,13 +11,14 @@
  - Why we need static modifier -> To define general utility methods inside interface. (These methods by default not available to the implementation classes)
  - Predefined functional interfaces
    - Predicate 
+     - `Predicate<T>` returns`boolean`.
      - ```
           interface Predicate<T> {
              public boolean test(T t);    
           }
        ```
-     - 
    - Function
+     - `Function<T, R>` returns`R`.
      - ```
         interface Function<T, R>{
             public R apply(T t);
@@ -30,6 +31,13 @@
        - Check class `FunctionChaining` for the example. 
 
    - Consumer
+     - `Consumer<T>` does not return anything.
+     - ```
+        interface Consumer<T>{
+            public void accpet(T t);
+        }
+       ``` 
+     - 
    - Supplier
  - Two argument predefined functional interfaces
    - BiPredicate
