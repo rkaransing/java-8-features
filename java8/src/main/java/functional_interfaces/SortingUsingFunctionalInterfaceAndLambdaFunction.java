@@ -1,4 +1,10 @@
-package lambda_functions;
+package functional_interfaces;
+
+/*
+ * @author Karansing Rajput
+ * @version 1.0
+ * @since 11/10/23, 1:28 pm
+ */
 
 /*
  * @author Karansing Rajput
