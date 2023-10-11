@@ -23,6 +23,11 @@
             public R apply(T t);
         }
        ```
+       
+     - Function chaining is possible because of which we can form complex functions, example: <code>f1.andThen(f2).apply(i), f1.compose(f2).apply(i)</code>
+       - In case of `andThen` first the `f1` is executed with passed input and then `f2` is executed with the value we got from `f1`.
+       - In case if `compose` first `f2` will be executed with manually passed argument value and then `f1` will be executed with the output of `f2`.
+       - Check class `FunctionChaining` for the example. 
 
    - Consumer
    - Supplier
