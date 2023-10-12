@@ -37,8 +37,25 @@
             public void accpet(T t);
         }
        ``` 
-     - 
+     - There is `andThen` method available for Consumer but not `compose`.
    - Supplier
+   - Predefined functional Interfaces
+     - Additional Functional Interfaces
+       - `Unary Operator` 
+         - If input and output is of same type then we should go for Unary Operator.
+         - It is chile of `Function<T, T>`.
+         - Primitive Type Unary Operators:
+           - `IntUnaryOperator`
+           - `DoubleUnaryOperator`
+           - `LongUnaryOperator`
+       - `Binary Operator`
+         - `BiFunction<T,T,T>`
+         - If both inputs are same then go for BinaryOperator.
+         - It is a child of `BiFunction<T,T,T>`
+         - Primitive types:
+           - `DoubleBinaryOperator` 
+           - `IntBinaryOperator`
+           - `LongBinaryOperator`
  - Two argument predefined functional interfaces
    - BiPredicate
    - BiFunction
