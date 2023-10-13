@@ -65,5 +65,10 @@
    - IntFunction
    - IntConsumer
  - `java.util.function` contains many predefined functional interfaces.
+ - Method and Constructor reference:
+   - This is an alternative to lambda expressions.
+   - In this case we can reuse an already existing code.
+   - Refer example in the class `MethodReference`
+   - Code re-usability is the biggest advantage of this method and cons tructor reference.
 
 
